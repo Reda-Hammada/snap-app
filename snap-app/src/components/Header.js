@@ -9,7 +9,6 @@ export default function Header(){
 
     return(
 
-        <div>
             <nav className="navbar">
                 <div>
                     <h1>test</h1>
@@ -18,10 +17,11 @@ export default function Header(){
 
                 </div>
                 <div>
-
+                    <button>Login</button>
+                    <button>Register</button>
                 </div>
             </nav>
-        </div>
+        
         
     )
 
