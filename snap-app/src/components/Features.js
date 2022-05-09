@@ -1,4 +1,8 @@
 import React from "react";
+import todo from './images/icon-todo.svg';
+import calendar from './images/icon-calendar.svg';
+import reminder from './images/icon-reminders.svg';
+import planning from './images/icon-planning.svg';
 
 export default function Feature(){
 
@@ -6,24 +10,26 @@ export default function Feature(){
     return (
 
         <div>
-            <p>Features</p>
             <div>
+                <p>Features</p>
+            </div>
+            <div >
                 <ul>
                     <div>
-                        <img src="./images/icon-todo.svg"  alt="todo icon"/>
+                        <img src={todo}  alt="todo icon"/>
                         <li>Todo List</li>
                     </div>
                     <div>
-                        <img src ="./images/icon-calendar.svg" alt="calendar icon" />
+                        <img src ={calendar} alt="calendar icon" />
                         <li>Calendar</li>
                     </div>
                     <div>
-                        <img src="./images/icon-reminders.svg" alt="reminders icon" />
+                        <img src={reminder} alt="reminders icon" />
                         <li>Reminders</li>
 
                     </div>
                     <div>
-                        <img src="./images/icon-Planning" alt="planning icon" />
+                        <img src={planning} alt="planning icon" />
                         <li>Planning</li>
 
                     </div>

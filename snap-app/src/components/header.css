@@ -1,11 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
 
 
+:root{
+
+    --background-color : hsl(0, 0%, 98%);
+    --universal-font : 'Epilogue', sans-serif;
 
 
+}
+
+
+.logo {
+    height: 30px;
+    max-height: 32px;
+    margin-top: 12px;
+}
 .navbar {
 
-
-    display:  flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     
+
+}
+
+
+.subNav {
+
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.buttonContainer .login{
+
+    border-style: hidden;
+    background-color: var(--background-color);
+    font-family: var(--universal-font);
+     cursor: pointer;
+}
+
+.buttonContainer .register{
+
+    font-family: var(--universal-font);
+    border-style: 1px black visible ;
+    background-color: var(--background-color);
+    width: 100px;
+    height: 40px;
+    border-radius: 11px;
+    margin-left: 50px;
+    cursor: pointer;
 
 }
