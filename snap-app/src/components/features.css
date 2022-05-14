@@ -1,0 +1,42 @@
+
+.feature {
+
+    cursor: pointer
+}
+.featureContainer{
+
+    background-color: #fff;
+    border-radius: 7px;
+    height: 150px;
+    width: 100%;    
+   
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.featureContainer ul {
+
+    width: 100%;
+   
+
+}
+.featureContainer ul li{
+
+list-style-type: none;
+padding-left: 10px;
+cursor:pointer;
+margin-top: 5px;
+margin-right: 50px;
+
+
+}
+
+.featureContainer img{
+
+    padding-left: 10px;
+    cursor:pointer;
+    margin-top: 5px;
+}
+
+

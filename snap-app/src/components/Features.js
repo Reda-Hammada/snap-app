@@ -1,43 +1,77 @@
-import React from "react";
+import React,{Component} from 'react';
 import todo from './images/icon-todo.svg';
 import calendar from './images/icon-calendar.svg';
 import reminder from './images/icon-reminders.svg';
 import planning from './images/icon-planning.svg';
+import './features.css';
 
-export default function Feature(){
+class Features extends Component{
+
+    state = {
+
+        showFeature: true
+    }
+
+    onShowToggle = () =>{
+
+        this.setState({showFeature: !this.state.showFeature});
+        console.log('state changed');
+
+    }
+   
+    render(){
 
 
-    return (
+        const iconList = {
 
-        <div>
+            display: "flex",
+        }
+
+        return (
+
             <div>
-                <p>Features</p>
+                <div>
+                    <p className='feature' onClick ={this.onShowToggle}>Features</p>
+                </div>
+                {this.state.showFeature ? (
+                <div className= "featureContainer" >
+                    <ul>
+                        <div style={iconList}>
+                            <img src={todo}  alt="todo icon"/>
+                            <li>Todo List</li>
+                        </div>
+                        <div style={iconList}>
+                            <img src ={calendar} alt="calendar icon" />
+                            <li>Calendar</li>
+                        </div>
+                        <div style={iconList}>
+                            <img src={reminder} alt="reminders icon" />
+                            <li>Reminders</li>
+
+                        </div>
+                        <div style={iconList}>
+                            <img src={planning} alt="planning icon" />
+                            <li>Planning</li>
+
+                        </div>
+                    </ul>
+                    
+                    
+                    
+                </div> 
+                 ) : null}
+
+
             </div>
-            <div >
-                <ul>
-                    <div>
-                        <img src={todo}  alt="todo icon"/>
-                        <li>Todo List</li>
-                    </div>
-                    <div>
-                        <img src ={calendar} alt="calendar icon" />
-                        <li>Calendar</li>
-                    </div>
-                    <div>
-                        <img src={reminder} alt="reminders icon" />
-                        <li>Reminders</li>
 
-                    </div>
-                    <div>
-                        <img src={planning} alt="planning icon" />
-                        <li>Planning</li>
+       )
 
-                    </div>
-                </ul>
-            </div>
-        </div>
+    }
 
-    )
+} 
 
 
-}
+
+
+export default Features;
+
