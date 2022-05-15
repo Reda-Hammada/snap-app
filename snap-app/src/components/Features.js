@@ -29,9 +29,9 @@ class Features extends Component{
 
         return (
 
-            <div>
-                <div>
-                    <p className='feature' onMouseOut ={this.onShowToggle}>Features</p>
+            <div  >
+                <div onMouseOut ={this.onShowToggle}>
+                    <p className='feature'>Features</p>
                 </div>
                 {this.state.showFeature ?(
                 <div className= "featureContainer" >
