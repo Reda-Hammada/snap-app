@@ -1,0 +1,12 @@
+
+/* 
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+
+:root{
+
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray :  hsl(0, 0%, 41%);
+    --almostBlack:  hsl(0, 0%, 8%);
+}

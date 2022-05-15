@@ -1,7 +1,24 @@
+ 
+
+/* 
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+
+:root{
+
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray :  hsl(0, 0%, 41%);
+    --almostBlack:  hsl(0, 0%, 8%);
+}
 
 .feature {
 
-    cursor: pointer
+    cursor: pointer;
+    margin-left:auto;
+    margin-right: auto ;
+
+  
 }
 .featureContainer{
 
@@ -9,9 +26,10 @@
     border-radius: 7px;
     height: 150px;
     width: 100%;    
-   
+    color: var(--almostBlack);
     padding-top: 10px;
-    text-align: center;
+    text-align: center; 
+    
 }
 
 
@@ -30,6 +48,11 @@ margin-top: 5px;
 margin-right: 50px;
 
 
+}
+
+.featureContainer ul li:hover{
+
+    color:var(--mediumGray);
 }
 
 .featureContainer img{

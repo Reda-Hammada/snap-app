@@ -9,13 +9,13 @@ class Features extends Component{
 
     state = {
 
-        showFeature: true
+        showFeature: false
     }
 
     onShowToggle = () =>{
 
         this.setState({showFeature: !this.state.showFeature});
-        console.log('state changed');
+     
 
     }
    
@@ -31,9 +31,9 @@ class Features extends Component{
 
             <div>
                 <div>
-                    <p className='feature' onClick ={this.onShowToggle}>Features</p>
+                    <p className='feature' onMouseOut ={this.onShowToggle}>Features</p>
                 </div>
-                {this.state.showFeature ? (
+                {this.state.showFeature ?(
                 <div className= "featureContainer" >
                     <ul>
                         <div style={iconList}>
