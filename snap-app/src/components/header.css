@@ -60,3 +60,9 @@
     cursor: pointer;
 
 }
+
+
+.register{
+
+    border:1px hsl(0, 0%, 8%) solid;
+}

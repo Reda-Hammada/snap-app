@@ -1,6 +1,9 @@
 import React,{Component} from 'react';
 import hero from './images/image-hero-desktop.png';
-
+import databiz from './images/client-databiz.svg';
+import audiophile from './images/client-audiophile.svg';
+import maker from './images/client-maker.svg';
+import meet from './images/client-meet.svg';
 
 class Herosection extends Component {
 
@@ -30,6 +33,35 @@ class Herosection extends Component {
             h1:{
 
                 fontSize:"5rem"
+            },
+
+            p:{
+                color:"hsl(0, 0%, 41%)",
+                fontSize:"1.4rem",
+                textJustify:"start"
+            },
+
+            button:{
+
+                borderRadius: "10px",
+                border:"1px solid black",
+                backgroundColor:"black",
+                color:"#fff",
+                width:"140px",
+                height:"50px",
+                fontWeight:"bolder",
+                fontSize:"1rem",
+                cursor:"pointer"
+                
+    
+            },
+
+            brands:{
+                 
+                display:"flex",
+                justifyContent:"space-between",
+                width:"100%",
+                marginTop:"10%"
             }
         },
 
@@ -41,6 +73,8 @@ class Herosection extends Component {
                 
             }
         }
+
+         
         }
 
         return(
@@ -54,14 +88,23 @@ class Herosection extends Component {
                         </h1>
                    </div>
                    <div>
-                        <p>
-            
+                        <p style={style.child1.p}>
+                            Get your team in sync, no matter your location. <br />
+                            Streamline processes, create team rituals, and <br />
+                            watch productivity soar.
                         </p>
                    </div>
                    <div>
-                        <button>
+                        <button style={style.child1.button}>
                             Learn More
                         </button>
+                   </div>
+                   <div style={style.child1.brands}>
+                        <img src={databiz} alt="databiz" />
+                        <img src={meet} alt="meet" />
+                        <img src={maker} alt="maker" />
+                        <img src={audiophile} alt="audiophile" />
+
                    </div>
     
                  
