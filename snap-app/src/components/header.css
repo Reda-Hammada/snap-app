@@ -4,6 +4,9 @@
 :root{
 
     --background-color : hsl(0, 0%, 98%);
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray :  hsl(0, 0%, 41%);
+    --almostBlack:  #141414;
     --universal-font : 'Epilogue', sans-serif;
 
 
@@ -19,9 +22,13 @@
 
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
 
+}
+
+.navbar p:hover{
+    color: var(--mediumGray);
 }
 
 
@@ -30,6 +37,7 @@
     display: flex;
     width: 40%;
     justify-content: space-between;
+    cursor: pointer
 }
 
 .buttonContainer .login{
@@ -43,7 +51,7 @@
 .buttonContainer .register{
 
     font-family: var(--universal-font);
-    border-style: 1px black visible ;
+    border-style:  #141414 visible ;
     background-color: var(--background-color);
     width: 100px;
     height: 40px;

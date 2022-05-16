@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+
+
+/* 
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+
+
+:root{
+
+    --universal-font : 'Epilogue', sans-serif;
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray :  hsl(0, 0%, 41%);
+    --almostBlack:  hsl(0, 0%, 8%);
+
+}
+
+
+.listCompany ul {
+
+    width: 100%;
+    margin-right: 50px;
+
+}
+
+
+.listCompany ul li {
+
+    list-style-type: none;
+    padding-top: 10px;
+    padding-right: 50%;
+    color: var(--almostBlack);
+    
+}
+    
+.listCompany ul li:hover{
+
+    color:var(--mediumGray)
+}
+
+
+
+.listCompany{
+
+    background-color: #fff;
+    border-radius: 7px;
+    height: 150px;
+    width: 100%;    
+    padding-top: 10px;
+    text-align: center;
+}
