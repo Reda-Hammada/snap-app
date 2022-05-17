@@ -27,7 +27,7 @@ class Make extends Component {
                     <li>Blog</li>
                 </ul>
             </div> 
-              ): null}
+              ):null}
         </div>
         
         )
