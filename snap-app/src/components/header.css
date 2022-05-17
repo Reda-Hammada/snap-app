@@ -70,12 +70,3 @@
 
 /* Responsive */
 
-@media screen and  (max-width:800) { /* mobile */
-
-    .subNav{
-
-        display: none;
-    }
-
-
-}
