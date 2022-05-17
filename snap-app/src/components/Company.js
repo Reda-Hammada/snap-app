@@ -18,7 +18,7 @@ class Make extends Component {
         return(
         
             <div >
-            <p  onMouseOver={this.onShowToggle}>Comapany</p>
+            <p  onClick={this.onShowToggle}>Comapany</p>
             {this.state.showCompany ?(
             <div className="listCompany">
                 <ul>
