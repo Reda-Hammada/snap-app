@@ -111,7 +111,7 @@ class Herosection extends Component {
                 </div>
                
                 <div style={style.child2}>
-                        <img style={style.child2.img} src ={hero}   alt="hero section" />
+                        <img style={style.child2.img} src ="./images/"  alt="hero section" />
                 </div>
             </section>
     
