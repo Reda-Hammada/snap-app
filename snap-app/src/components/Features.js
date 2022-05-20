@@ -30,7 +30,7 @@ class Features extends Component{
         return (
 
             <div  >
-                <div onMouseOut ={this.onShowToggle}>
+                <div onClick ={this.onShowToggle}>
                     <p className='feature'>Features</p>
                 </div>
                 {this.state.showFeature ?(
