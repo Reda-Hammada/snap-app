@@ -1,23 +1,20 @@
 import React,{useState} from 'react'
-import Todo from '../images/icon-todo.svg';
-import Calendar from '../images/icon-calendar.svg';
-import Reminders from '../images/icon-reminders.svg';
-import Planning from '../images/icon-planning.svg';
+import Todo from '../images/icon-todo.svg'
+import Calendar from '../images/icon-calendar.svg'
+import Reminders from '../images/icon-reminders.svg'
+import Planning from '../images/icon-planning.svg'
 
 function Features() {
 
   const [toggle,setToggle] = useState(false);
 
-  const show = ()=>{
+  const Toggle = ()=>{
 
     setToggle(!toggle);
 
   }
 
-  const hide = () => {
 
-    setToggle(!toggle);
-  }
 
   
 
@@ -27,33 +24,32 @@ function Features() {
 
   return (
     <div className='Features_container'>
-        <p onMouseOver={show}
-           onMouseOut={hide}>Features</p>
+        <p onClick={Toggle}
+           >Features</p>
+        { toggle ?(
+        <div  className='features_list_container'>
+            <ul>
+              <li>
+                <img src={Todo} alt={'todo icon'} />
+                <span>Todo list</span>
+              </li>
+              <li>
+              <img src={Calendar} alt={'todo icon'} />
+              <span>Calendar</span>
+              </li>
+              <li>
+              <img src={Reminders} alt={'todo icon'} />
+                <span>Rminders</span>
+              </li>
+              <li>
+              <img src={Planning} alt={'todo icon'} />
+                <span>Planning</span>
+              </li>
+            </ul>
+        </div>
 
-        <div className='features_list_container'>
-         {toggle ?(
-
-          <ul>
-            <li>
-              <img src={Todo} alt={'todo icon'} />
-              Todo List
-            </li>
-            <li>
-            <img src={Calendar} alt={'todo icon'} />
-            Calendar
-            </li>
-            <li>
-            <img src={Reminders} alt={'todo icon'} />
-               Reminders
-            </li>
-            <li>
-            <img src={Planning} alt={'todo icon'} />
-              Planning
-            </li>
-          </ul>
          )
          :null}
-        </div>
     </div>
   )
 }
