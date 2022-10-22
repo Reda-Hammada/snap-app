@@ -1,3 +1,4 @@
+
 :root {
 
     --Almost-White: hsl(0, 0%, 98%);
@@ -5,3 +6,95 @@
     --Almost-Black: hsl(0, 0%, 8%);
   
   }
+  
+/* navbar starts */
+
+.nav_container {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+  
+  }
+  
+  .logo_list_container {
+  
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+  }
+  
+  .list_container ul {
+
+    display: flex;  
+
+  }
+
+  .list_container ul li {
+
+    list-style-type: none;
+    padding-right: 10%;
+    cursor: pointer;
+    color:var(--Medium-Gray);
+  }
+
+  .list_container ul li:hover {
+
+    color:var(--Almost-Black);
+
+
+  }
+
+  .button_container {
+
+    width: 65%;
+    display: flex;
+    margin-right: 4%;
+    justify-content: flex-end;
+  }
+
+  .button_container .button_login {
+
+    margin-right: 3%;
+    color: var(--Medium-Gray);
+    border:hidden;
+    background-color: var(--Almost-Whiae);
+    cursor: pointer;
+    width: 70px;
+    font-size: 0.9rem;
+
+
+  }
+
+  .button_container .button_register {
+
+    margin-right: 3%;
+    border-radius: 5px;
+    color: var(--Medium-Gray);
+    border:2px solid var(--Medium-Gray);
+    background-color: var(--Almost-Whiae);
+    cursor: pointer;
+    width: 90px;
+    font-size: 0.9rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.button_container .button_register:hover {
+
+    color: var(--Almost-Black);
+    border:2px solid var(--Almost-Black);
+
+    }
+
+
+.button_container .button_login:hover {
+
+    color:var(--Almost-Black);
+}
+
+
