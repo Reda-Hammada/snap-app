@@ -5,3 +5,15 @@
     --Almost-Black: hsl(0, 0%, 8%);
   
   }
+
+
+  .features_list_container {
+
+    position: absolute;
+    width: 11%;
+    background-color: #fff;
+  }
+
+
+  .features_list_container ul li {
+  }

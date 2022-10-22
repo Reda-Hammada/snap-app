@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import Logo from '../images/logo.svg'
-import Features from './Features';
-import Company from './Company';
+import Features from './Features'
+import Company from './Company'
 
 
 function Header() {

@@ -21,7 +21,7 @@
   .logo_list_container {
   
     display: flex;
-    width: 35%;
+    width: 40%;
     justify-content: space-evenly;
   }
   
@@ -48,7 +48,7 @@
 
   .button_container {
 
-    width: 65%;
+    width: 60%;
     display: flex;
     margin-right: 4%;
     justify-content: flex-end;
@@ -62,7 +62,6 @@
     background-color: var(--Almost-Whiae);
     cursor: pointer;
     width: 70px;
-    font-size: 0.9rem;
 
 
   }
@@ -76,7 +75,6 @@
     background-color: var(--Almost-Whiae);
     cursor: pointer;
     width: 90px;
-    font-size: 0.9rem;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -96,5 +94,10 @@
 
     color:var(--Almost-Black);
 }
+
+
+/* navbar ends */
+
+
 
 
