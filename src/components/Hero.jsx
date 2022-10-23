@@ -18,6 +18,10 @@ function Hero() {
         <div className='heading_images_container'>
             <div className='heading_images'>
                 <h1>Make<br></br>remote work</h1>
+                <p>Get your team in sync,no matter your location<br></br>
+                    Streamline processes,create team rituals, and<br></br>
+                    watch productivity soar .</p>
+                <button>Learn more</button>
                 <div>
 
                 </div>

@@ -1,12 +1,18 @@
  
+:root {
 
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+  
+  }
 
  .main_container  {
 
     width: 100%;
     margin-left: 10%;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 6%;
     
  }
 
@@ -18,8 +24,30 @@
  }
  .main_container .heading_images_container h1 {
 
-    font-size: 4rem;
+    font-size: 3rem;
  }
+
+ .main_container .heading_images_container p {
+
+     color: var( --Medium-Gray);
+     margin-top: 1%;
+ }
+
+ 
+ .main_container .heading_images_container button {
+    color:#fff;
+    margin-top: 5%;
+    background-color: #000;
+    font-weight: 700;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
 
 
  .heading_images {
