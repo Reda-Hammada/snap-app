@@ -1,10 +1,36 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function Company() {
 
-  return (
+  const [toggle,setToggle] = useState(false);
 
-    <div>Company</div>
+
+  const Toggle = () => {
+    
+    setToggle(!toggle);
+
+  }
+
+
+
+   return (
+
+    <div className='company_container'>
+      <p onMouseOver={Toggle}
+      >Company</p>
+      {
+        toggle ?(
+    <div className='company_list_container'>
+      <ul>
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    ):null}
+
+    </div>
   
     )
 }

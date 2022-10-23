@@ -8,23 +8,16 @@ function Features() {
 
   const [toggle,setToggle] = useState(false);
 
-  const Toggle = ()=>{
-
+  const Toggle = () => {
+    
     setToggle(!toggle);
 
   }
 
-
-
-  
-
-
-
-
-
+ 
   return (
     <div className='Features_container'>
-        <p onClick={Toggle}
+        <p onMouseOver={Toggle}
            >Features</p>
         { toggle ?(
         <div  className='features_list_container'>

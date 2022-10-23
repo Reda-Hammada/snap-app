@@ -5,3 +5,33 @@
     --Almost-Black: hsl(0, 0%, 8%);
   
   }
+
+  .company_list_container {
+
+    position: absolute;
+    width: 10%;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 120px;
+    margin-top: 1%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 4px 4px 4px 4px #fff;
+  }
+
+  .company_list_container ul {
+
+    display: block;
+    text-align: start;
+    margin-left: 12%;
+    padding-top:5%;
+    margin-top:1%;
+  }
+
+  .company_list_container ul li {
+
+    margin-top: 5%;
+
+  }
