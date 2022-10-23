@@ -6,8 +6,8 @@ import Company from './Company'
 
 function Header() {
   return (
-    <div className='nav_container'>
-        <div className='logo_list_container'>
+    <header className='nav_container'>
+        <nav className='logo_list_container'>
             <div className='logo_container'>
                 <img src={Logo} alt = 'Logo snap app icon' />
             </div>
@@ -19,14 +19,14 @@ function Header() {
                     <li>About</li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <div className='button_container'>
             <button className='button_login'>Login</button>
             <button className='button_register'>Register</button>
         </div>
         
         
-    </div>
+    </header>
   )
 }
 

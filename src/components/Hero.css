@@ -1,0 +1,33 @@
+ 
+
+
+ .main_container  {
+
+    width: 100%;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 5%;
+    
+ }
+
+ .heading_images_container{ 
+
+    display: flex;
+    width: 80%;
+    
+ }
+ .main_container .heading_images_container h1 {
+
+    font-size: 4rem;
+ }
+
+
+ .heading_images {
+
+    width: 70% ;
+ }
+
+ .hero_image_container img {
+
+    width: 40vw;
+ }
