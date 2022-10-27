@@ -95,6 +95,22 @@
     color:var(--Almost-Black);
 }
 
+/*responsive */
+
+@media screen  and (max-width:840px){
+
+  .list_container {
+
+    display: none;
+  }
+
+  .button_container {
+
+    display: none;
+  }
+
+
+}
 
 /* navbar ends */
 

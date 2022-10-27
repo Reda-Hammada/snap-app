@@ -63,7 +63,10 @@
  .images_container {
 
   margin-top:  10%;
+ 
  }
+
+ 
 
 
  /* responsive */
@@ -90,6 +93,10 @@
        width:  100%;
      }
 
+     .heading_images{
+
+      margin-top: 5%;
+     }
      .main_container .heading_images_container h1 {
 
         text-align: center;
@@ -106,6 +113,37 @@
         text-align: center;
      }
 
+     .hero_image_container {
+
+      width: 100%;
+      
+     }
+     
+     .hero_image_container img {
+
+      width: 75%;
+      height: 80vh;
+      margin-left: 15%;
+     }
+     .button_hero_container{
+
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+
+
+     }
+     
+      .sub_button_hero_container {
+
+
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+
+     }   
     
 
 

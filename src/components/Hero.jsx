@@ -9,12 +9,16 @@ import meet from '../images/client-meet.svg';
 function Hero() {
 
     const [mobile, matchScreen] = useState(
+
         window.matchMedia("max-width: 840px )").mobile
+        
         );
+
     useEffect(()=>{
 
         window.matchMedia("(max-width: 840px )")
         .addEventListener('change', e => matchScreen(e.matches));
+        
     },[])
 
   return (
@@ -25,7 +29,12 @@ function Hero() {
                 <p>Get your team in sync,no matter your location
                     Streamline processes,create team rituals, and
                     watch productivity soar .</p>
-                <button>Learn more</button>
+                <div className="button_hero_container">
+                    <div className='sub_button_hero_container'>
+                        <button>Learn more</button>
+                    </div>
+
+                </div>
                 <div className='images_container'>
                     <img src={databiz} alt='databiz svg' />
                     <img src={audiophile} alt ='audiophile svg'/>
@@ -34,9 +43,9 @@ function Hero() {
                 </div>
             </div>
             <div className='hero_image_container'>
-                 {mobile && (<img src={imageDesktop} alt='image desktop for hero ' />
+                 {mobile && (<img src={imageDesktop} alt=' desktop for hero ' />
                     )}
-                 {!mobile &&  (<img src={imageMobile} alt='image desktop for hero ' />
+                 {!mobile &&  (<img src={imageMobile} alt=' desktop for hero ' />
                  )}
             </div>
         </div>
