@@ -29,6 +29,7 @@ body{
   background-color: #000;
   opacity: 0.9;
   width: 100%;
+  display: none;
   top:0;
   bottom: 0;
    position: absolute;
@@ -99,4 +100,12 @@ body{
 
   margin-right: 4%;
 
+}
+
+@media screen  and (max-width:840px){
+
+  .ultimate_menu_container {
+
+    display: block;
+  }
 }

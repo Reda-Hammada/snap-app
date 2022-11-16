@@ -34,10 +34,12 @@ function Hero() {
                </div>
 
                 <div className='images_container'>
+
                     <img src={databiz} alt='databiz svg' />
                     <img src={audiophile} alt ='audiophile svg'/>
                     <img src={meet} alt='meet svg' />
                     <img src={maker} alt='maker svg' />
+                    
                 </div>
             </div>
             <div className='hero_image_container'>
