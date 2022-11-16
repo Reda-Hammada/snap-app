@@ -16,8 +16,7 @@ function Company() {
    return (
 
     <div className='company_container'>
-      <p onMouseOver={Toggle}
-      >Company</p>
+      <p onMouseOver={Toggle}>Company</p>
       {
         toggle ?(
     <div className='company_list_container'>

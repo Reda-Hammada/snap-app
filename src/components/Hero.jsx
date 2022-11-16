@@ -27,14 +27,12 @@ function Hero() {
             <div className='heading_images'>
                 <h1>Make remote work</h1>
                 <p>Get your team in sync,no matter your location
-                    Streamline processes,create team rituals, and
+                    Streamline processes,create team rituals, and 
                     watch productivity soar .</p>
                 <div className="button_hero_container">
-                    <div className='sub_button_hero_container'>
                         <button>Learn more</button>
-                    </div>
+               </div>
 
-                </div>
                 <div className='images_container'>
                     <img src={databiz} alt='databiz svg' />
                     <img src={audiophile} alt ='audiophile svg'/>

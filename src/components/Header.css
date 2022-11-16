@@ -95,6 +95,26 @@
     color:var(--Almost-Black);
 }
 
+/* styling burger bar icon */
+.burger_container {
+
+  display: none;
+}
+.bar1,
+.bar2,.bar3 {
+  width: 40px;
+  height: 3px;
+  border-radius: 3px;
+  margin-top: 8%;
+  background-color: var(--Almost-Black);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+}
+
+
 /*responsive */
 
 @media screen  and (max-width:840px){
@@ -107,6 +127,21 @@
   .button_container {
 
     display: none;
+  }
+
+
+  .burger_container {
+    display: flex;
+    width: 10%;
+   
+  }
+
+  .logo_list_container {
+    width: 100%;
+  }
+  .logo_container {
+
+    width: 50%;
   }
 
 

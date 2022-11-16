@@ -9,8 +9,20 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
+
+      <div className='ultimate_menu_container'>
+        <div className='menu_container'>  
+            <div className='close_nav_container'>
+                <span>X</span>
+            </div>                      
+        </div>
+      </div>
+
+
+          <Header />
+          <Hero />
+   
+  
     </div>
   );
 }

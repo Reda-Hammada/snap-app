@@ -16,8 +16,37 @@
 }
 
 body{
+
   background-color: var(--Almost-White);
   user-select: none;
   font-weight: 500;
+  overflow-x: hidden;
 
+}
+/* tablet & mobile phone menu */
+
+.ultimate_menu_container {
+  background-color: #000;
+  opacity: 0.9;
+  width: 100%;
+  top:0;
+  bottom: 0;
+   position: absolute;
+}
+
+.menu_container {
+  background-color: var(--Almost-White);
+  width: 70vw;
+  height: 100%;
+  float: right;
+}
+
+.close_nav_container span {
+
+  font-size: 2rem;
+  width: auto;
+  float: right;
+  color:var(--Almost-Black);
+  margin-right: 7%;
+  margin-top: 2%;
 }

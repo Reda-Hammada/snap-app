@@ -63,7 +63,14 @@
  .images_container {
 
   margin-top:  10%;
+  width: 100%;
  
+ }
+
+ .images_container img {
+
+   padding-right: 6%;
+   margin-top: 2%;
  }
 
  
@@ -121,29 +128,24 @@
      
      .hero_image_container img {
 
-      width: 75%;
+      width: 75vw;
       height: 80vh;
       margin-left: 15%;
      }
-     .button_hero_container{
-
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5%;
-
-
-     }
      
-      .sub_button_hero_container {
+     
+      .button_hero_container{
 
+         text-align: center;
+      }
 
-      width: 50%;
+     .images_container {
+      width: 100%;
+      text-align: center;
       margin-left: auto;
-      margin-right: auto;
-
-
-     }   
+      padding-top: 2%;
+      
+     }
     
 
 
