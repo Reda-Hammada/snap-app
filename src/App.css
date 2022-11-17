@@ -21,9 +21,10 @@ body{
   user-select: none;
   font-weight: 500;
   overflow-x: hidden;
+  height: 100vh;
 
 }
-/* tablet & mobile phone menu */
+/* tablet & mobile phone menu
 
 .ultimate_menu_container {
   background-color: #000;
@@ -108,4 +109,4 @@ body{
 
     display: block;
   }
-}
+} */

@@ -23,8 +23,10 @@ function Menu(props) {
   }
   return (
 
-    
-    <div className='ultimate_menu_container'>
+    <React.Fragment >
+        <div className='ultimate_menu_container'>
+            
+        </div>
         <div className='menu_container'>  
             <div className='close_nav_container'>
                 <span onClick={props.closemenu}>X</span>
@@ -69,7 +71,8 @@ function Menu(props) {
              </div>      
           </div>              
         </div>
-      </div>
+    </React.Fragment>
+    
 
             
   

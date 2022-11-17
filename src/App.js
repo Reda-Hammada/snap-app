@@ -10,11 +10,11 @@ import { useState } from 'react';
 
 function App() {
 
-  const [menu, setMenu] = useState(true)
+  const [menu, setMenu] = useState(false)
 
   const Closemenu = () => {
 
-    setMenu(false);
+    setMenu(!menu);
   }
  
   return (
@@ -27,7 +27,7 @@ function App() {
 
       ):null}
       
-      <Header />
+      <Header closemenu = {Closemenu} />
       <Hero />
    
   

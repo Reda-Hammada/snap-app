@@ -1,20 +1,28 @@
 /* tablet & mobile phone menu */
 
 .ultimate_menu_container {
+  
     background-color: #000;
+    opacity: 0.4;
     opacity: 0.9;
     width: 100%;
     display: none;
     top:0;
-    bottom: 0;
-     position: absolute;
+    bottom: -100%;
+    position: absolute;
+ 
+ 
   }
   
   .menu_container {
-    background-color: var(--Almost-White);
-    width: 70vw;
-    height: 100%;
-    float: right;
+    background-color: #fff;
+    position: absolute;
+    width: 60vw;
+    top:0;
+    right: 0;
+    bottom:-100%;
+    display: none;
+
   }
   
   .close_nav_container span {
@@ -32,7 +40,6 @@
   
   .close_nav_container span:hover {
       background-color: whitesmoke;
-      
       width: 50px;
       text-align: center;
       border-radius: 50px;
@@ -53,10 +60,16 @@
   
     list-style-type: none;
     cursor: pointer;
+    margin-top: 4%;
   }
   .menu_list .features {
   
     margin-bottom: 4%;
+    cursor: pointer;
+  }
+
+  .menu_container .company {
+
     cursor: pointer;
   }
   .menu_list .features ul {
@@ -76,11 +89,18 @@
     margin-right: 4%;
   
   }
-  
+
+
+
   @media screen  and (max-width:840px){
-  
+
     .ultimate_menu_container {
-  
+
+      display: block;
+    }
+
+    .menu_container {
       display: block;
     }
   }
+  

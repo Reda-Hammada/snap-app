@@ -5,7 +5,7 @@ import Company from './Company'
 import { useState } from 'react'
 
 
-function Header(){
+function Header(props){
 
     const [navBar, showNav] = useState(false);
 
@@ -40,10 +40,10 @@ function Header(){
 
             </div>
 
-            <div onClick={mobileNavShow} className="burger_container">
+            <div onClick={props.closemenu} className="burger_container">
 
              
-             <div className="sub_burger_container">
+             <div onClick={mobileNavShow} className="sub_burger_container">
 
                 <div className="bar1">
 
