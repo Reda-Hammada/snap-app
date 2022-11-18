@@ -8,16 +8,16 @@
     bottom: -100%;
     position: absolute;
     display: none;
-    transition: transform 3s ease-out;
+    transition: transform 1s ease-in;
     transform: translateX(1150px);
     -webkit-transform: translateX(1150px);
     -moz-transform: translateX(1150px);
     -ms-transform: translateX(1150px);
     -o-transform: translateX(1150px);
-    -webkit-transition: transform 3s ease-out;
-    -moz-transition: transform 3s ease-out;
-    -ms-transition: transform 3s ease-out;
-    -o-transition: transform 3s ease-out;
+    -webkit-transition: transform 1s ease-in;
+    -moz-transition: transform 1s ease-in;
+    -ms-transition: transform 1s ease-in;
+    -o-transition: transform 1s ease-in;
 }
 
   .menu_container {
@@ -28,16 +28,16 @@
     top:0;
     right: 0;
     bottom:-100%;
-    transition: transform 1s ease-out;
-    transform: translateX(350px);
-    -webkit-transform: translateX(350px);
-    -moz-transform: translateX(350px);
-    -ms-transform: translateX(350px);
-    -o-transform: translateX(350px);
-    -webkit-transition: transform 1s ease-out;
-    -moz-transition: transform 1s ease-out;
-    -ms-transition: transform 1s ease-out;
-    -o-transition: transform 1s ease-out;
+    transition: transform 3s ease-in;
+    transform: translateX(3150px);
+    -webkit-transform: translateX(3150px);
+    -moz-transform: translateX(3150px);
+    -ms-transform: translateX(3150px);
+    -o-transform: translateX(3150px);
+    -webkit-transition: transform 3s ease-in;
+    -moz-transition: transform 3s ease-in;
+    -ms-transition: transform 3s ease-in;
+    -o-transition: transform 3s ease-in;
 }
 
 .change_menu_container {
@@ -53,11 +53,11 @@
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
-    transition: transform 1s ease-out;
-    -webkit-transition: transform 1s ease-out;
-    -moz-transition: transform 1s ease-out;
-    -ms-transition: transform 1s ease-out;
-    -o-transition: transform 1s ease-out;
+    transition: transform 2s ease-out;
+    -webkit-transition: transform 2s ease-out;
+    -moz-transition: transform 2s ease-out;
+    -ms-transition: transform 2s ease-out;
+    -o-transition: transform 2s ease-out;
 }
 
 
