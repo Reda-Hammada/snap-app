@@ -1,30 +1,84 @@
 /* tablet & mobile phone menu */
 
 .ultimate_menu_container {
-  
     background-color: #000;
-    opacity: 0.4;
     opacity: 0.9;
     width: 100%;
-    display: none;
     top:0;
     bottom: -100%;
     position: absolute;
- 
- 
-  }
-  
+    display: none;
+    transition: transform 2s ease-in;
+    transform: translateX(550px);
+    -webkit-transform: translateX(550px);
+    -moz-transform: translateX(550px);
+    -ms-transform: translateX(550px);
+    -o-transform: translateX(550px);
+    -webkit-transition: transform 2s ease-in;
+    -moz-transition: transform 2s ease-in;
+    -ms-transition: transform 2s ease-in;
+    -o-transition: transform 2s ease-in;
+}
+
   .menu_container {
+    display: none;
     background-color: #fff;
     position: absolute;
     width: 60vw;
     top:0;
     right: 0;
     bottom:-100%;
-    display: none;
+    transition: transform 2s ease-in;
+    transform: translateX(350px);
+    -webkit-transform: translateX(350px);
+    -moz-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    -o-transform: translateX(350px);
+    -webkit-transition: transform 2s ease-in;
+    -moz-transition: transform 2s ease-in;
+    -ms-transition: transform 2s ease-in;
+    -o-transition: transform 2s ease-in;
+}
 
-  }
-  
+.change_menu_container {
+
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    width: 60vw;
+    top:0;
+    right: 0;
+    bottom:-100%;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transition: transform 1s ease-in;
+
+}
+
+
+.change_ultimate_container    {
+  background-color: #000;
+  opacity: 0.9;
+  width: 100%;
+  display: none;
+  top:0;
+  bottom: -100%;
+  position: absolute;
+  transform: translateX(0px);
+  transition: transform 1s ease-in;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -webkit-transition: transform 1s ease-in;
+  -moz-transition: transform 1s ease-in;
+  -ms-transition: transform 1s ease-in;
+  -o-transition: transform 1s ease-in;
+}
+
   .close_nav_container span {
   
     font-size: 2.6rem;
@@ -100,6 +154,17 @@
     }
 
     .menu_container {
+
+      display: block;
+    }
+
+    .change_ultimate_container{
+
+      display: block;
+    }
+
+    .change_menu_container {
+
       display: block;
     }
   }

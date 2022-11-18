@@ -14,8 +14,9 @@ function Menu(props) {
   const Feature = () => {
     
     setFeature(!feature);
+     
 
-  }
+  } 
 
   const Company = () => {
 
@@ -24,10 +25,10 @@ function Menu(props) {
   return (
 
     <React.Fragment >
-        <div className='ultimate_menu_container'>
+        <div id='ultimate_menu_container' className='ultimate_menu_container'>
             
         </div>
-        <div className='menu_container'>  
+        <div id='menu_container' className='menu_container'>  
             <div className='close_nav_container'>
                 <span onClick={props.closemenu}>X</span>
             </div> 

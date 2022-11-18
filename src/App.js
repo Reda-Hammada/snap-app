@@ -3,6 +3,7 @@ import './components/Header.css'
 import './components/Features.css';
 import './components/Company.css';
 import './components/Hero.css';
+import './components/Menu.css';
 import Menu from './components/Menu';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -14,7 +15,32 @@ function App() {
 
   const Closemenu = () => {
 
-    setMenu(!menu);
+     setMenu(false);
+     
+     const navMenu = document.getElementById('menu_container');
+     const menuContainer =  document.getElementById('ultimate_menu_container');
+ 
+       navMenu.classList.remove('change_menu_container')
+       navMenu.classList.add('menu_container')
+       menuContainer.classList.remove('change_ultimate_container')
+       menuContainer.classList.add('ultimate_menu_container')
+
+
+    
+  }
+
+  const Showmenu = () => {
+
+    setMenu(true);
+    const navMenu = document.getElementById('menu_container');
+    const menuContainer =  document.getElementById('ultimate_menu_container');
+
+      navMenu.classList.remove('.menu_container')
+      navMenu.classList.add('change_menu_container')
+      menuContainer.classList.remove('ultimate_menu_container')
+      menuContainer.classList.add('change_ultimate_container')
+      console.log(menuContainer);
+  
   }
  
   return (
@@ -27,7 +53,7 @@ function App() {
 
       ):null}
       
-      <Header closemenu = {Closemenu} />
+      <Header showmenu = {Showmenu} />
       <Hero />
    
   

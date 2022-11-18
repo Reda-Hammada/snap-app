@@ -2,18 +2,11 @@ import React from 'react'
 import Logo from '../images/logo.svg'
 import Features from './Features'
 import Company from './Company'
-import { useState } from 'react'
-
 
 function Header(props){
 
-    const [navBar, showNav] = useState(false);
-
-    const mobileNavShow = () => {
-
-      showNav(!navBar)
-
-    }
+    
+  
 
   return (
 <React.Fragment>
@@ -40,10 +33,10 @@ function Header(props){
 
             </div>
 
-            <div onClick={props.closemenu} className="burger_container">
+            <div onClick={props.showmenu} className="burger_container">
 
              
-             <div onClick={mobileNavShow} className="sub_burger_container">
+             <div  id='burger' onClick={props.closemenu} className="sub_burger_container">
 
                 <div className="bar1">
 
