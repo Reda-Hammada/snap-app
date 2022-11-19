@@ -13,14 +13,15 @@
   --Medium-Gray: hsl(0, 0%, 41%);
   --Almost-Black: hsl(0, 0%, 8%);
 
+
 }
 
 body{
 
   background-color: var(--Almost-White);
-  user-select: none;
-  font-weight: 500;
   overflow-x: hidden;
+  font-weight: 500;
   height: 100vh;
+  width: 100%;
 
 }

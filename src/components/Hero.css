@@ -79,7 +79,12 @@
  /* responsive */
 
 @media screen  and (max-width:840px){
-
+   
+     .hero_image_container {
+          
+      margin-top:5%;
+      height: auto;
+     }
     .heading_images_container {
 
         display: flex;
