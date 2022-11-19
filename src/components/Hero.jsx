@@ -22,6 +22,10 @@ function Hero() {
     },[])
 
   return (
+
+
+    <React.Fragment>
+
     <main className='main_container '>
         <div className='heading_images_container'>
             <div className='heading_images'>
@@ -43,6 +47,7 @@ function Hero() {
                 </div>
             </div>
             <div className='hero_image_container'>
+
                  {mobile && (<img src={imageDesktop} alt=' desktop for hero ' />
                     )}
                  {!mobile &&  (<img src={imageMobile} alt=' desktop for hero ' />
@@ -50,6 +55,12 @@ function Hero() {
             </div>
         </div>
     </main>
+    <div className="challenges">
+        <div className="p_challenges">
+            <p>Challenged by : <a target='_#' href='https://www.frontendmentor.io/home'>Front end mentor</a> ,Coded by: <a  target='_#'href='https://github.com/Reda-Hammada'>Reda Hammada</a></p>
+        </div>
+    </div>
+</React.Fragment>
   )
 }
 

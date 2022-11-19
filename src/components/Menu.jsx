@@ -18,8 +18,8 @@ function Menu({closeMenu}) {
     // focus on the menu element 
      closeMenuRef.current = closeMenu();
 
-
-  },[])
+  },
+  [])
 
   const Feature = () => {
     
@@ -94,6 +94,7 @@ function Menu({closeMenu}) {
               </div>    
           </div>              
         </div>
+
     </React.Fragment>
     
 

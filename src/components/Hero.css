@@ -73,6 +73,28 @@
    margin-top: 2%;
  }
 
+ .challenges {
+
+   width: 100%;
+   padding-top: 5%;
+   text-align: center;
+ }
+
+ .p_container {
+
+   width: 50%;
+   margin-right: auto;
+   margin-left: auto;
+
+ }
+
+ .challenges a {
+
+   text-decoration: none;
+   color:#000;
+   font-weight: bolder;
+   
+ }
  
 
 
