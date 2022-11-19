@@ -19,9 +19,14 @@
 body{
 
   background-color: var(--Almost-White);
-  overflow-x: hidden;
   font-weight: 500;
   height: 100vh;
   width: 100%;
 
+}
+
+html,  body {
+
+  overflow-x: hidden;
+  position: fixed;
 }
