@@ -8,8 +8,6 @@
 
 
   .features_list_container {
-    transform: translateY(400px);
-    transition: transform 2s ease-in-out;
     position: absolute;
     width: 15%;
     background-color: #fff;
@@ -21,14 +19,7 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     box-shadow: 4px 4px 4px 4px #fff;
-    -webkit-transition: transform 2s ease-in-out;
-    -moz-transition: transform 2s ease-in-out;
-    -ms-transition: transform 2s ease-in-out;
-    -o-transition: transform 2s ease-in-out;
-    -webkit-transform: translateY(400px);
-    -moz-transform: translateY(400px);
-    -ms-transform: translateY(400px);
-    -o-transform: translateY(400px);
+ 
 }
 
 
@@ -36,12 +27,7 @@
     display: block;
     text-align: center;
     margin-top: 3%;
-    transform: translateY(400px);
-    transition: transform 2s ease-in-out;
-    -webkit-transition: transform 2s ease-in-out;
-    -moz-transition: transform 2s ease-in-out;
-    -ms-transition: transform 2s ease-in-out;
-    -o-transition: transform 2s ease-in-out;
+
 }
 
   .features_list_container ul li span  {
@@ -53,14 +39,5 @@
 
   .features_list_container ul li {
     padding-top:3%;
-    transform: translateY(400px);
-    transition: transform 2s ease-in-out;
-    -webkit-transform: translateY(400px);
-    -moz-transform: translateY(400px);
-    -ms-transform: translateY(400px);
-    -o-transform: translateY(400px);
-    -webkit-transition: transform 2s ease-in-out;
-    -moz-transition: transform 2s ease-in-out;
-    -ms-transition: transform 2s ease-in-out;
-    -o-transition: transform 2s ease-in-out;
+
 }

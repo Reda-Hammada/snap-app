@@ -2,74 +2,77 @@ import React from 'react'
 import Logo from '../images/logo.svg'
 import Features from './Features'
 import Company from './Company'
+import {useEffect,useRef} from 'react'
 
-function Header(props){
+function Header({showMenu}){
 
-    
-  
+    const burgerRef = useRef(null)
+
+    useEffect(() => {
+
+        burgerRef.current = showMenu();
+
+
+    },[])
 
   return (
+
 <React.Fragment>
-    <header className='nav_container'>
 
-        <nav className='logo_list_container'>
+            <header className='nav_container'>
 
-            <div className='logo_container'>
+                <nav className='logo_list_container'>
+                    <div className='logo_container'>
+                    
+                        <img src={Logo} alt = 'Logo snap app icon' />
 
-                <img src={Logo} alt = 'Logo snap app icon' />
+                    </div>
+                    <div className='list_container'>
 
-            </div>
+                        <ul>
 
-            <div className='list_container'>
+                            <li><Features /></li>
+                            <li><Company /></li>
+                            <li>Careers</li>
+                            <li>About</li>
 
-                <ul>
+                        </ul>
 
-                    <li><Features /></li>
-                    <li><Company /></li>
-                    <li>Careers</li>
-                    <li>About</li>
+                    </div>
+                    <div ref={burgerRef} onClick={() => showMenu()} className="burger_container">
 
-                </ul>
+                    
+                    <div  id='burger'  className="sub_burger_container">
 
-            </div>
+                        <div className="bar1">
 
-            <div onClick={props.showmenu} className="burger_container">
+                        </div>
 
-             
-             <div  id='burger' onClick={props.closemenu} className="sub_burger_container">
+                        <div className="bar2">
 
-                <div className="bar1">
+                        </div>
 
+                        <div className="bar3">
+                        
+                        </div>
+
+                    </div>
+                    </div>
+
+                </nav>
+
+                <div  className='button_container'>
+
+                    <button className='button_login'>Login</button>
+                    <button className='button_register'>Register</button>
+                    
                 </div>
 
-                <div className="bar2">
-
-                </div>
-
-                <div className="bar3">
-                  
-                </div>
-
-             </div>
-            </div>
-
-        </nav>
-
-        <div  className='button_container'>
-
-            <button className='button_login'>Login</button>
-            <button className='button_register'>Register</button>
-            
-        </div>
-        
-        
-    </header>
-  
+            </header>
 
 </React.Fragment>
+
   )
-
-
 }
 
 export default Header
