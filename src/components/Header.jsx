@@ -13,7 +13,7 @@ function Header({showMenu}){
         burgerRef.current = showMenu();
 
 
-    },[])
+    })
 
   return (
 
