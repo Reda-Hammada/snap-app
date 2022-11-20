@@ -58,6 +58,7 @@
  .hero_image_container img {
 
     width: 40vw;
+    margin-bottom: 1%;
  }
 
  .images_container {
@@ -71,12 +72,14 @@
 
    padding-right: 6%;
    margin-top: 2%;
+
  }
 
  .challenges {
 
    width: 100%;
-   padding-top: 5%;
+   padding-top: 3%;
+   margin-bottom: 2%;
    text-align: center;
  }
 
