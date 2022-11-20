@@ -19,7 +19,7 @@ function Menu({closeMenu}) {
      closeMenuRef.current = closeMenu();
 
   },
-  [closeMenuRef])
+  [closeMenu])
 
   const Feature = () => {
     
