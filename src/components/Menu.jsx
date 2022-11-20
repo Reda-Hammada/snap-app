@@ -18,7 +18,7 @@ function Menu({closeMenu}) {
     // focus on the menu element 
      closeMenuRef.current = closeMenu();
 
-  },[])
+  },[closeMenu])
 
   const Feature = () => {
     
