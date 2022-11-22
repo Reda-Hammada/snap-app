@@ -11,7 +11,7 @@ function Header({showMenu,menu}){
     useEffect(()=>{
 
         burgerRef.current = showMenu();
-    },[burgerRef])
+    })
 
   return (
 
