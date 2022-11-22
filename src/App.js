@@ -7,7 +7,7 @@ import './components/Menu.css'
 import Menu from './components/Menu';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 
 function App() {
@@ -52,6 +52,17 @@ function App() {
         }
   
   }
+
+  useEffect(()=>{
+
+    closeMenu();
+  },[menu])
+
+  useEffect(()=>{
+
+    showMenu();
+    
+  },[menu])
 
 
   return(
