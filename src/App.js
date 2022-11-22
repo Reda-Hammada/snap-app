@@ -7,7 +7,7 @@ import './components/Menu.css'
 import Menu from './components/Menu';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import { useState,useCallback } from 'react';
+import { useState } from 'react';
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
 
     if(fadeIn()){
 
-      setMenu(false);
+      setMenu(false)
 
     }
 
@@ -45,9 +45,11 @@ function App() {
   }
  
   const showMenu = () => {
-    setMenu(true)
+
+        if(menu === false){
+        setMenu(true)
         fadeOut()
-    
+        }
   
   }
 
