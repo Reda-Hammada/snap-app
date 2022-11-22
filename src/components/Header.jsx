@@ -8,12 +8,10 @@ function Header({showMenu}){
 
     const burgerRef = useRef(null)
 
-    useEffect(() => {
+    useEffect(()=>{
 
         burgerRef.current = showMenu();
-
-
-    },[showMenu,burgerRef])
+    })
 
   return (
 

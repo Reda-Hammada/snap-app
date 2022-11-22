@@ -7,12 +7,13 @@ import './components/Menu.css'
 import Menu from './components/Menu';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import { useState } from 'react';
+import { useState,useCallback } from 'react';
 
 
 function App() {
 
   const [menu, setMenu] = useState(false)
+
   const fadeIn = () => {
 
     let navMenu = document.querySelector('#menu_container')
@@ -22,15 +23,18 @@ function App() {
 
   }
 
-  const closeMenu =()=>{
+  const closeMenu = () =>{
 
     fadeIn();
 
     if(fadeIn()){
+
       setMenu(false);
+
     }
 
   }
+  
   const fadeOut = () => {
 
     let navMenu = document.querySelector('#menu_container')
@@ -42,12 +46,9 @@ function App() {
  
   const showMenu = () => {
     setMenu(true)
-    if(menu === true){
         fadeOut()
-    }
     
-   
-
+  
   }
 
 
