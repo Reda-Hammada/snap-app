@@ -6,7 +6,7 @@ import Calendar from '../images/icon-calendar.svg'
 import Reminders from '../images/icon-reminders.svg'
 import Planning from '../images/icon-planning.svg'
 
-function Menu({closeMenu}) {
+function Menu({closeMenu,menu}) {
 
   const closeMenuRef = useRef();
   const [feature,setFeature] = useState(false)
@@ -18,7 +18,7 @@ function Menu({closeMenu}) {
     // focus on the menu element 
      closeMenuRef.current = closeMenu();
 
-  })
+  },[closeMenu,menu])
 
   const Feature = () => {
     

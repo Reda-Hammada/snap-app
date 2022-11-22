@@ -59,12 +59,12 @@ function App() {
 
       {menu ?(
 
-        <Menu closeMenu={closeMenu}/>
+        <Menu  menu ={menu} closeMenu={closeMenu}/>
 
         )
         :null}
         
-        <Header showMenu={showMenu}/>
+        <Header menu ={menu} showMenu={showMenu}/>
         <Hero />
     
   

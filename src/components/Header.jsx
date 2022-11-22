@@ -4,14 +4,14 @@ import Features from './Features'
 import Company from './Company'
 import {useEffect,useRef} from 'react'
 
-function Header({showMenu}){
+function Header({showMenu,menu}){
 
     const burgerRef = useRef(null)
 
     useEffect(()=>{
 
         burgerRef.current = showMenu();
-    })
+    },[showMenu,menu])
 
   return (
 
