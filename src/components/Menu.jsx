@@ -39,7 +39,7 @@ function Menu({closeMenu,menu}) {
      
         <div ref={closeMenuRef} id='menu_container' className='menu_container'>  
             <div className='close_nav_container'>
-                <span onClick={() => closeMenu(closeMenuRef.current)}>X</span>
+                <span onClick={() => closeMenu()}>X</span>
             </div> 
            <div className='menu_list'>
             <div className='features'>
