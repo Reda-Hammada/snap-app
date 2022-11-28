@@ -16,7 +16,7 @@ function Menu({closeMenu,menu}) {
   useEffect(()=> {
 
     // focus on the menu element 
-     closeMenuRef.current = closeMenu();
+     closeMenuRef.current.closeMenu();
 
   })
 
