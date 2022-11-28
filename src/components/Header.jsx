@@ -10,7 +10,7 @@ function Header({showMenu,menu}){
 
     useEffect(()=>{
 
-        burgerRef.current = showMenu();
+        burgerRef.current.showMenu();
     })
 
   return (
